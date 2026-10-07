@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SMART ROUTH MAP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SMART ROUTH MAP</h1>
+    <div class="main-container">
+
+        <!-- LEFT SIDE -->
+        <div class="controls">
+
+            <label>From City:</label>
+
+            <select id="fromCity">
+                <option>Jaipur</option>
+                <option>Delhi</option>
+                <option>Agra</option>
+                <option>Kota</option>
+                <option>Mumbai</option>
+                <option>Gurgaon</option>
+            </select>
+            <label>To City:</label>
+            <select id="toCity">
+                <option>Jaipur</option>
+                <option>Delhi</option>
+                <option>Agra</option>
+                <option>Kota</option>
+                <option>Mumbai</option>
+                <option>Gurgaon</option>
+            </select>
+
+            <button id="findRoute">
+                Find Shortest Route
+            </button>
+        </div>
+        <!-- CENTER MAP -->
+        <div class="map">
+         <img src="map.png" alt="Smart Route Map">
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="result">
+            <h2>Shortest Route:</h2>
+            <p id="routeResult"></p>
+            <hr>
+            <h2>Distance:</h2>
+            <p id="distanceResult"></p>
+            <h2>Estimated Time:</h2>
+            <p id="timeResult"></p>
+
+        </div>
+    </div>
+    <script src="java.js"></script>
+
+</body>
+</html>
